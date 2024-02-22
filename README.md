@@ -3,10 +3,7 @@
 
 ## 1일차
 - 파이썬 개발환경 
-    - 깃헙 가입
-
-    [깃헙](https://github.com/)
-
+    - [깃헙](https://github.com/) 가입  
     - 깃 설치
 
     https://git-scm.com/download/win
