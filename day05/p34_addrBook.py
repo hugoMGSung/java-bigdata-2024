@@ -17,6 +17,16 @@ class Contact: # 주소록 클래스
                f'이메일 : {self.__eMail}\n'
                f'주  소 : {self.__addr}')
         return res
+    
+    # 연락처 여부확인
+    def isNameExist(self, name):
+        if self.__name == name: # 찾는 이름 존재
+            return True
+        else:
+            return False
+        
+    def getInfo(self):
+        return self.__name, self.__phoneNumber, self.__eMail, self.__addr
 
 def setContact(): # 사용자 입력으로 주소록 받기함수
     (name, phoneNumber, eMail, addr) = input('입력(이름,핸드폰,이메일,주소[/])> ').split('/')
@@ -27,6 +37,31 @@ def setContact(): # 사용자 입력으로 주소록 받기함수
     # print(f'"{name}", "{phoneNumber}", "{eMail}", "{addr}"')
     contact = Contact(name, phoneNumber, eMail, addr) # 매개변수명과 동일하게 로컬변수 이름 지정
     return contact
+
+def delContact(lst, name): # 연락처 삭제함수
+    for i, item in enumerate(lst):
+        if item.isNameExist(name):
+            del lst[i]
+
+def saveContact(lst): # 연락처 저장함수
+    with open('./contacts.txt', mode='w', encoding='utf-8') as fp:
+        for item in lst:
+            name, phoneNumber, eMail, addr = item.getInfo()
+            fp.write(f'{name}/{phoneNumber}/{eMail}/{addr}\n')
+
+def loadContact(lst): # 처음 실행시 연락처 로드함수
+    try:
+        with open('./contacts.txt', mode='r', encoding='utf-8') as fp:
+            while True:
+                line = fp.readline() # str
+                if not line: break
+
+                lines = line.replace('\n', '').split('/') # list
+                contact = Contact(name=lines[0], phoneNumber=lines[1], eMail=lines[2], addr=lines[3])
+                lst.append(contact)
+    except: # 연락처 파일이 없으면 새로 만들어줌
+        f = open('./contacts.txt', mode='w', encoding='utf-8')
+        f.close()
 
 def displayMenu():
     menu = ('주소록 프로그램\n'
@@ -46,12 +81,14 @@ def clearConsole():
     os.system(cmd) # 명령어 실행
 
 def getContacts(lst): # 리스트를 받아서 출력함수
-    for item in lst:
+    for i, item in enumerate(lst):
+        print(f'{i+1} ==========>')
         print(item)
 
 def run():
     # 연락처담을 주소록 리스트
     lstContact = []
+    loadContact(lstContact) # 연락처 로드
 
     clearConsole() # 화면을 클리어
     while True:
@@ -62,12 +99,18 @@ def run():
             contact = setContact()
             lstContact.append(contact)
             # print(lstContact)
-            input(); clearConsole() # 엔터 입력유도            
+            input('입력 성공!'); clearConsole() # 엔터 입력유도            
         elif selMenu == 2: # 연락처 출력
             clearConsole()
             getContacts(lstContact)
-            input(); clearConsole()
+            input('출력 성공!'); clearConsole()
+        elif selMenu == 3: # 연락처 삭제
+            clearConsole()
+            name = input('삭제할 이름 입력 : ')
+            delContact(lstContact, name)
+            input('삭제 성공'); clearConsole()
         elif selMenu == 4:
+            saveContact(lstContact)
             break
         else:
             clearConsole() 
