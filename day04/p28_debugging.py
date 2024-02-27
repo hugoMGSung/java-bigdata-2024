@@ -81,3 +81,4 @@ while True:
         break
     else: # 1~5외의 입력이 들어오면
         continue
+    
