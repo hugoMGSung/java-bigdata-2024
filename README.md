@@ -70,4 +70,31 @@
         - 아스키 및 유니코드
         - 주소록 앱 만들기
 
+        ```python
+        class Contact: # 주소록 클래스
+            def __init__(self, name, phoneNumber, eMail, addr) -> None: # 생성자
+                self.__name = name
+                self.__phoneNumber = phoneNumber
+                self.__eMail = eMail
+                self.__addr = addr
+
+            def __str__(self) -> str: # 원래출력 <__main__.Contact object at 0x0000024500772150> 
+                res = (f'이  름 : {self.__name}\n'
+                    f'핸드폰 : {self.__phoneNumber}\n'
+                    f'이메일 : {self.__eMail}\n'
+                    f'주  소 : {self.__addr}')
+                return res
+            
+            def isNameExist(self, name): # 연락처 여부확인
+                if self.__name == name: # 찾는 이름 존재
+                    return True
+                else:
+                    return False
+                
+            def getInfo(self):
+                return self.__name, self.__phoneNumber, self.__eMail, self.__addr
+        ```
+
         ![주소록앱](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata01.gif)
+
+        - 
