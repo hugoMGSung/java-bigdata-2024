@@ -100,3 +100,9 @@
         - Windows App 만들기(PyQt 5)
 
         ![QtApp](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata02.png)
+
+
+## 6일차 (24.02.28)
+- 파이썬 학습
+    - PyQt5 학습 이어서
+        - QWidget 자식 클래스 종류 학습
