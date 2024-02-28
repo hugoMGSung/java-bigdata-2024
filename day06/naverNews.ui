@@ -102,7 +102,11 @@
      </widget>
     </item>
     <item>
-     <widget class="QListView" name="lsvSearchResult"/>
+     <widget class="QTableWidget" name="tblSearchResult">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
