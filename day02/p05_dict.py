@@ -2,7 +2,10 @@
 # desc: 딕셔너리 자료형, 집합 학습
 
 ## 딕셔너리 구성
-spiderMan = { 'name':'Peter Parker', 'age':18, 'weapon': 'Web shooter', 'friends': ['ironMan','Thor','Captain America'] }
+spiderMan = { 'name':'Peter Parker', 
+             'age':18, 
+             'weapon': 'Web shooter', 
+             'friends': ['ironMan','Thor','Captain America'] }
 
 ## 출력
 print(spiderMan)

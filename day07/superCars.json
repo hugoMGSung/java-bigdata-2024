@@ -1,0 +1,12 @@
+{
+	"audi": {
+		"price": 300000000,
+		"year": "2020",
+		"type": "electric"
+	},
+	"porsche": {
+		"price": 1500000000,
+		"year": "2019",
+		"type": "gasolin"
+	}
+}
