@@ -1,0 +1,228 @@
+/* style 전체 관여 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+/* body 전체 */
+body {
+    text-align: center;
+    color: black;
+    background-color:black;
+    width: 100%;
+    height:100%;
+    
+    font-family: 'Jeju Gothic', serif;
+    margin : 0 auto;
+}
+
+#board{
+    background-color : white;
+    margin : 0 auto;
+    height : 1300px;
+    width : 1200px;
+}
+
+#board1 {
+    
+    margin : 0 auto;
+    height:30%;
+    width:100%;
+}
+
+/*div의 아이디가 wapper*/
+div#wapper {
+    width: 90%;
+    text-align: left;
+    min-height: 300px;
+    margin: 0 auto;
+}
+/* header, footer, nav, aside , section인 태그들*/
+header, footer, nav, aside, section  {
+    
+    margin: 5px;
+    padding: 10px;
+}
+/* header태그 */
+header {
+    height: 40%;
+    background-color:WHITE;
+    border-top:2px solid black;
+    border-bottom : 2px solid black;
+ 
+}
+/*nav, section, aside태그 */
+nav, section, aside {
+    float: left;
+    height: 200px;
+    width: 100%;
+}
+/* nav 태그 */
+nav {
+  
+    width: 15%;
+    float : left;
+    text-align: center;
+    
+   
+}
+/* section태그  */
+section {
+    
+    width: 50%;
+    overflow:hidden;
+
+}
+section p{
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+/* aside 태그 */
+aside {
+    
+    width: 25%;
+    float:right;
+}
+aside ul li {
+    line-height: 30px;
+}
+aside p{
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+/* footer태그 */
+footer {
+    height: 40%;
+    background-color: white;
+    position: relative;
+    clear: both;
+}
+
+/* article 태그 */
+article {
+    width: 90%;
+    margin-left: 20px;
+    list-style: none;
+    overflow: hidden;
+    line-height: 30px;
+    
+    
+}
+article p {
+    text-align:center;
+    
+}
+
+
+
+/* ul-li태그들의 list style없애는 부분 */
+div nav ul li {
+    list-style : none;
+    text-align: left;
+   margin-bottom: 10px;
+
+}
+nav p {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+
+
+
+div nav ul li a {
+    text-decoration: none;
+}
+
+div header ul li {
+    list-style: none;
+    float : left;
+    border-right:  1px solid burlywood;
+    padding-left : 30px;
+    padding-right : 30px;
+    color : black;
+  
+
+}
+
+div header ul li:hover {
+    color : crimson;
+}
+div header ul {
+    overflow:hidden;
+    display:table; /* 중앙정렬을 위한 width값 제한 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div header ul li:first-child {
+    border-left : 2px solid burlywood;
+    border-radius: 5px 0 0 5px;
+
+}
+
+div header ul li:last-child {
+    border-right: 2px solid burlywood;
+    border-radius: 0 5px 5px 0; 
+}
+
+
+#maintop {
+    margin-top:  50px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left : 40px;
+    
+    
+    
+}
+#logoimg{
+   display: inline-block;
+    background-color : white;
+    width : 70px;
+    height : 70px;
+    
+}
+
+div aside ul li{
+    list-style: none;
+}
+
+footer ul {
+    overflow:hidden;
+    display:table;  /* 요소에 따른 ul(안의 li)들 중앙정렬 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer li {
+    list-style: none;
+    float : left;
+    border-right:  1px solid burlywood;
+    padding-left : 30px;
+    padding-right : 30px;
+    color : black;
+   
+}
+footer li:first-child {
+    border-left : 2px solid burlywood;
+    border-radius: 5px 0 0 5px;
+}
+footer li:last-child {
+    border-right: 2px solid burlywood;
+    border-radius: 0 5px 5px 0; 
+}
+
+footer img {
+    
+    width : 33%;
+    height: 150px;
+    border-top:5px solid black;
+    border-bottom : 5px solid black;
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 1000000px;
+   
+    
+}

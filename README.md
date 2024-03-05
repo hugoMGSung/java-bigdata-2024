@@ -123,14 +123,15 @@
 
         ![스레드](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata05.png)
 
-        - TTS       
-        - QRCode 생성기
+- 파이썬 응용
+    - TTS(Text To Speech)
+    - QRCode 생성기
 
-        ![QR](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata06.png)
+    ![QR](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata06.png)
 
-        - 구글번역기앱
+    - 구글번역기앱
 
-        ![구글번역](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata07.png)
+    ![구글번역](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata07.png)
 
 ## 8일차
 - 파이썬 응용
@@ -151,8 +152,15 @@
 
     ![얼굴인식](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata10.gif)
     
-    - 플라스크 웹서버 
-    - 그림에디터 만들기
+    - [Flask](https://flask-docs-kr.readthedocs.io/ko/latest/index.html), [Django](https://developer.mozilla.org/ko/docs/Learn/Server-side/Django) 웹서버
+    
+    - 그림에디터 만들기(with PyQt5)
+
+    ![editor](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata11.gif)
+
+## 10일차
+- 파이썬 응용
+    - 그림에디터 완성
     - 메모장 만들기
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
 
