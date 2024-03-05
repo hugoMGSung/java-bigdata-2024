@@ -147,8 +147,13 @@
 
 ## 9일차
 - 파이썬 응용
-    - 이미지 처리 OpenCV
+    - 이미지 처리 OpenCV [윤대희님 깃헙](https://076923.github.io/posts/Python-opencv-1/) 참조
+
+    ![얼굴인식](https://raw.githubusercontent.com/hugoMGSung/java-bigdata-2024/main/images/bigdata10.gif)
+    
     - 플라스크 웹서버 
     - 그림에디터 만들기
     - 메모장 만들기
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
+
+
