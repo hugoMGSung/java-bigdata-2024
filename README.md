@@ -162,7 +162,7 @@
 - 파이썬 응용
     - 그림에디터 완성(OpenCV 그레이스케일, 블러기능 추가) 
 
-    
+    https://github.com/hugoMGSung/java-bigdata-2024/assets/59336331/736ac88b-4929-4f7d-8b9b-c444304b170e
 
     - 실행파일 만들기
         - PyInstaller 모듈 설치
