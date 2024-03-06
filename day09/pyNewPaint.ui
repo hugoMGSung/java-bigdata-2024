@@ -79,6 +79,7 @@
       <string>변환(&amp;T)</string>
      </property>
      <addaction name="action_Grayscale"/>
+     <addaction name="action_Blur"/>
     </widget>
     <addaction name="menu_P"/>
     <addaction name="menu_T_2"/>
@@ -189,6 +190,11 @@
   <action name="action_Grayscale">
    <property name="text">
     <string>그레이스케일(&amp;G)</string>
+   </property>
+  </action>
+  <action name="action_Blur">
+   <property name="text">
+    <string>블러(&amp;B)</string>
    </property>
   </action>
  </widget>
